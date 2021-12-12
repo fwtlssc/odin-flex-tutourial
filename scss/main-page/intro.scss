@@ -1,0 +1,35 @@
+
+
+
+#intro{
+    background-color: #1F2937;
+    padding: 5rem;
+    display: flex;
+    
+    @media (max-width: $md){
+        .img-container{
+            display: none;  
+        }
+    }
+    .media-object{
+        justify-content: center;
+        .content{
+            flex-basis: 30vw;
+            @media(max-width: $md){
+                flex-basis: auto;
+            }
+            p{
+                color: $txt-grey;
+            }
+            a{
+                @extend .btn;
+                @extend .btn-primary;
+                @extend .btn-rounded-lg;
+            }
+        }
+        .img-container{
+            max-height: 250px;
+            flex-basis: 30vw;
+        }
+    }
+}

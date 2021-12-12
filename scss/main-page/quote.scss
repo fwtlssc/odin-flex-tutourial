@@ -1,0 +1,25 @@
+
+
+
+#quote{
+    background-color: #E5E7EB;
+    padding: 5rem;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .content{
+       width: 50%;
+       @media (max-width: $sm){
+           width: 80%;
+       }
+    }
+    blockquote{
+        font-style: italic;
+    }
+    .author{
+        font-weight: bold;
+        text-align: right;
+        margin-top: 1rem;
+    }
+}

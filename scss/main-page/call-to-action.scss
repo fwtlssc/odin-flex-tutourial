@@ -1,0 +1,35 @@
+
+
+#call-to-action{
+    margin: 10rem;
+    padding: 3rem 10rem;
+    border-radius: 0.5rem;
+    background-color: #3b82f6;
+    @media (max-width: $sm){
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+    @media (max-width: $xs){
+        margin-right: 2rem;
+        margin-left: 2rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+    .media-object{
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    a{
+        @extend .btn;
+        border: 1px solid #fff;
+        &:hover{
+            background-color: $txt-grey;
+        }
+    }
+}

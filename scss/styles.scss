@@ -1,0 +1,23 @@
+@font-face{
+    font-family: Rubik;
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+@import '../css/reset.css';
+@import '_variables';
+@import 'general';
+@import 'utilities/container.scss';
+@import 'utilities/image.scss';
+@import 'utilities/button.scss';
+@import 'utilities/list.scss';
+
+
+@import './components/main-nav.scss';
+@import './components/main-footer.scss';
+/* || main-page */
+@import './main-page/intro.scss';
+@import './main-page/information.scss';
+@import './main-page/quote.scss';
+@import './main-page/call-to-action.scss';
+

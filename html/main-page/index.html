@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main-nav-container"></div>
+    <main>
+        <div id="intro-container"></div>
+        <div id="information-container"></div>
+        <div id="quote-container"></div>
+        <div id="call-to-action-container"></div>
+    </main>
+    <div id="main-footer-container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script> 
+        $(function(){
+            $("#main-nav-container").load("../components/main-nav.html"); 
+            $("#intro-container").load("./intro.html")
+            $("#information-container").load("./information.html")
+            $("#quote-container").load("./quote.html")
+            $("#call-to-action-container").load("./call-to-action.html")
+            $("#main-footer-container").load("../components/main-footer.html")
+        });
+    </script>
+ 
+</body>
+</html>
